@@ -4,20 +4,19 @@ class MainClass
 {
     public static void Main(string[] args)
     {
-        Week favday;
         Console.Write("Enter your name: ");
-        string name = Console.ReadLine();
+        var name = Console.ReadLine();
         Console.Write("Enter your age: ");
-        int age = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine($"Your name is {name} and age is {age}");
-        Console.WriteLine("What is your favorute day?");
-        Week MyFavDay = (Week) byte.Parse(Console.ReadLine());
-        Console.WriteLine(MyFavDay);
+        var age = Console.ReadLine();
+        Console.WriteLine($"Your name is {name} and your age is {age}");
+        Console.Write("Enter your birthdate: ");
+        var birthdate = Console.ReadLine();
+        Console.WriteLine($"Your birthdate is {birthdate}");
         Console.ReadKey();
     }
 }
 
-enum Week : byte
+/*enum Week : byte
 {
     Monday = 1,
     Tuesday = 2,
@@ -27,4 +26,4 @@ enum Week : byte
     Saturday = 6,
     Sunday = 7
 
-}
+}*/
